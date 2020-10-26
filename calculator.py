@@ -4,7 +4,7 @@ import os
 root = Tk()
 
 root.title("Basic Calculator")
-e = Entry(root,width=60,borderwidth=10, fg="white", bg="green")
+e = Entry(root,width=60,borderwidth=10, fg="black", bg="grey")
 e.grid(row= 0, column=0, columnspan=5, padx=10, pady=10)
 
 current=0
@@ -63,16 +63,16 @@ def clrBtn():
 
 
 #Numerical Buttons
-btn_1 = Button(root, text= "1",padx = 40, pady=20, command = lambda: btn_click(1))
-btn_2 = Button(root, text= "2",padx = 40, pady=20, command = lambda: btn_click(2) )
-btn_3 = Button(root, text= "3",padx = 40, pady=20, command = lambda: btn_click(3) )
-btn_4 = Button(root, text= "4",padx = 40, pady=20, command = lambda: btn_click(4) )
-btn_5 = Button(root, text= "5",padx = 40, pady=20, command = lambda: btn_click(5) )
-btn_6 = Button(root, text= "6",padx = 40, pady=20, command = lambda: btn_click(6) )
-btn_7 = Button(root, text= "7",padx = 40, pady=20, command = lambda: btn_click(7) )
-btn_8 = Button(root, text= "8",padx = 40, pady=20, command = lambda: btn_click(8) )
-btn_9 = Button(root, text= "9",padx = 40, pady=20, command = lambda: btn_click(9) )
-btn_0 = Button(root, text= "0",padx = 40, pady=20, command = lambda: btn_click(0) )
+btn_1 = Button(root, text= "1",padx = 40, pady=20, command = lambda: btn_click(1), fg="white", bg= "black")
+btn_2 = Button(root, text= "2",padx = 40, pady=20, command = lambda: btn_click(2), fg="white", bg= "black" )
+btn_3 = Button(root, text= "3",padx = 40, pady=20, command = lambda: btn_click(3), fg="white", bg= "black" )
+btn_4 = Button(root, text= "4",padx = 40, pady=20, command = lambda: btn_click(4), fg="white", bg= "black" )
+btn_5 = Button(root, text= "5",padx = 40, pady=20, command = lambda: btn_click(5), fg="white", bg= "black" )
+btn_6 = Button(root, text= "6",padx = 40, pady=20, command = lambda: btn_click(6), fg="white", bg= "black" )
+btn_7 = Button(root, text= "7",padx = 40, pady=20, command = lambda: btn_click(7), fg="white", bg= "black" )
+btn_8 = Button(root, text= "8",padx = 40, pady=20, command = lambda: btn_click(8), fg="white", bg= "black" )
+btn_9 = Button(root, text= "9",padx = 40, pady=20, command = lambda: btn_click(9), fg="white", bg= "black" )
+btn_0 = Button(root, text= "0",padx = 40, pady=20, command = lambda: btn_click(0), fg="white", bg= "black" )
 
 btn_1.grid(row= 3, column=0)
 btn_2.grid(row= 3, column=1)
@@ -90,12 +90,12 @@ btn_0.grid(row= 4, column=1)
 
 
 #Function buttons
-btn_add = Button(root, text= "+",padx = 40, pady=20, command = lambda: funcBtn("+") )
-btn_sub = Button(root, text= "-",padx = 40, pady=20, command = lambda: funcBtn("-") )
-btn_mult = Button(root, text= "×",padx = 40, pady=20, command = lambda: funcBtn("×") )
-btn_div = Button(root, text= "÷",padx = 40, pady=20, command = lambda: funcBtn("÷") )
-btn_clr = Button(root, text= "C",padx = 40, pady=20, command = clrBtn )
-btn_eql = Button(root, text= "=",padx = 40, pady=20, command = eqlBtn )
+btn_add = Button(root, text= "+",padx = 40, pady=20, command = lambda: funcBtn("+"), fg = "white", bg = "green" )
+btn_sub = Button(root, text= "-",padx = 40, pady=20, command = lambda: funcBtn("-"), fg = "white", bg = "green"  )
+btn_mult = Button(root, text= "×",padx = 40, pady=20, command = lambda: funcBtn("×"), fg = "white", bg = "green"  )
+btn_div = Button(root, text= "÷",padx = 40, pady=20, command = lambda: funcBtn("÷"), fg = "white", bg = "green"  )
+btn_clr = Button(root, text= "C",padx = 40, pady=20, command = clrBtn, fg="black", bg = "purple")
+btn_eql = Button(root, text= "=",padx = 40, pady=20, command = eqlBtn, fg = "white", bg="red")
 
 
 btn_add.grid(row= 2, column=3)
