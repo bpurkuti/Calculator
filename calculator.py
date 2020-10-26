@@ -55,6 +55,9 @@ def eqlBtn():
 
 
 def clrBtn():
+   global token
+   global current
+   
    e.delete(0,END)
    current=0
    token=""
